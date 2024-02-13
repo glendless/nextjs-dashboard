@@ -27,7 +27,7 @@ export default async function Page({
             </div>
 
             <div className="mt-4 flex items-center justify-between gap-2 ">
-                <Search placeholder="Search invoices ..." />
+                <Search />
                 <CreateInvoice />
             </div>
 
@@ -35,7 +35,7 @@ export default async function Page({
                 <Table query={query} currentPage={currentPage} />
             </Suspense>
             <div className="mt-5 flex w-full justify-center">
-                <Pagination totalPages={totalPages}/>
+                <Pagination totalPages={totalPages} />
             </div>
         </div>
     )
